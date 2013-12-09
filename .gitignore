@@ -29,3 +29,6 @@ proguard/
 .idea/
 /HTML5Application/nbproject/private/
 /nbproject/private/
+
+#bonis
+.DS_Store
