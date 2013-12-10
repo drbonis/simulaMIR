@@ -171,6 +171,7 @@ var pgexam = {
             $("#next_question").unbind('click');
             $("#next_question").on('click',function(event){
                 event.preventDefault();
+                console.log("nex_question click");
                 $.mobile.silentScroll(0);
                 pgexam.respondidaflag = false;
                 $('#respul .resp').removeClass('incorrecto correcto');  
@@ -192,7 +193,7 @@ var pgexam = {
             
             $('#respul .resp').unbind('click');
             $('#respul .resp').on('click',function(d){
-
+                console.log("#respul .resp event");
                if (!pgexam.respondidaflag) {
                 pgexam.respondidaflag = true;
                 $("#detalles").show();
