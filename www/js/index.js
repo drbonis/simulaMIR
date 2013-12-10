@@ -160,6 +160,7 @@ var pgexam = {
         pgexam.respondida = false;
         
         $.when(pgexam.addExam(pgexam.nickname)).done(function(r){
+            console.log(r);
             pgexam.idexam = r['idexam'];
             //console.log("pgexam.initialize_options");
             pgexam.initialize_options(pgexam.i);
